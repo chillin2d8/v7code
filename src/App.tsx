@@ -38,7 +38,7 @@ function App() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-deep-blue">Tabrah TelePsychiatry</h1>
-                <p className="text-sm text-dark-grey font-medium">REACH OUT FOR HELP</p>
+                <p className="text-sm text-dark-grey font-medium">Reach out for help</p>
               </div>
             </button>
 
@@ -46,7 +46,7 @@ function App() {
             <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
               <a href="#about" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">About Dr. Tabrah</a>
               <a href="#services" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Services</a>
-              <a href="#how-it-works" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">How It Works</a>
+              <a href="#how-it-works" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">How it works</a>
               <a href="#faqs" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">FAQs</a>
               <a href="#contact" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Contact</a>
               <a 
@@ -82,7 +82,7 @@ function App() {
               <div className="flex flex-col space-y-4">
                 <a href="#about" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">About Dr. Tabrah</a>
                 <a href="#services" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Services</a>
-                <a href="#how-it-works" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">How It Works</a>
+                <a href="#how-it-works" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">How it works</a>
                 <a href="#faqs" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">FAQs</a>
                 <a href="#contact" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Contact</a>
                 <a 
@@ -225,14 +225,14 @@ function App() {
         {/* Practice Disclaimers Section */}
         <section className="py-12 bg-gray-100" aria-labelledby="disclaimers-heading">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 id="disclaimers-heading" className="sr-only">Practice Information and Disclaimers</h2>
+            <h2 id="disclaimers-heading" className="sr-only">Practice information and disclaimers</h2>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               {/* Non-Discrimination */}
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-12 h-12 bg-periwinkle rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">🤝</span>
                 </div>
-                <h3 className="text-lg font-bold text-deep-blue mb-3">Inclusive Care</h3>
+                <h3 className="text-lg font-bold text-deep-blue mb-3">Inclusive care</h3>
                 <p className="text-dark-grey text-sm">
                   We provide a safe, respectful environment for all, without discrimination based on race, gender, sexual orientation, age, religion, disability, or any protected status.
                 </p>
@@ -243,7 +243,7 @@ function App() {
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
                   <span className="text-red-600 text-2xl">🚨</span>
                 </div>
-                <h3 className="text-lg font-bold text-red-600 mb-3">Emergency Notice</h3>
+                <h3 className="text-lg font-bold text-red-600 mb-3">Emergency notice</h3>
                 <p className="text-dark-grey text-sm">
                   This practice is not equipped for emergencies. For crisis support, call or text 988 (Suicide & Crisis Lifeline) or dial 911.
                 </p>
@@ -254,7 +254,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">👤</span>
                 </div>
-                <h3 className="text-lg font-bold text-deep-blue mb-3">Adult-Only Practice</h3>
+                <h3 className="text-lg font-bold text-deep-blue mb-3">Adult-only practice</h3>
                 <p className="text-dark-grey text-sm">
                   This practice exclusively serves adult patients aged 18 years and older. We specialize in adult psychiatric care only.
                 </p>
@@ -271,7 +271,7 @@ function App() {
                 Comprehensive Telepsychiatry Services Tailored for You
               </h2>
               <p className="text-xl text-dark-grey max-w-3xl mx-auto">
-                Areas of Focus & Conditions Supported - Online Depression Therapy, Virtual Anxiety Treatment, Women's Mental Health, Medication Management
+                Areas of focus & conditions supported - online depression therapy, virtual anxiety treatment, women's mental health, medication management
               </p>
             </div>
 
@@ -281,7 +281,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">🧠</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Mood Disorders</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Mood disorders</h3>
                 <ul className="text-dark-grey space-y-2">
                   <li>• Depressive disorders</li>
                   <li>• Bipolar disorders (depressive, mixed, hypomanic states)</li>
@@ -295,7 +295,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">💭</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Anxiety Disorders</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Anxiety disorders</h3>
                 <ul className="text-dark-grey space-y-2">
                   <li>• Generalized anxiety disorder</li>
                   <li>• Panic disorder & agoraphobia</li>
@@ -310,7 +310,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">👩</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Women's Mental Health</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Women's mental health</h3>
                 <ul className="text-dark-grey space-y-2">
                   <li>• Infertility support</li>
                   <li>• Maternal mental health (pre/postpartum)</li>
@@ -324,7 +324,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">🎯</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Specialized Care</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Specialized care</h3>
                 <ul className="text-dark-grey space-y-2">
                   <li>• Sleep disorders</li>
                   <li>• Anger management/impulse control</li>
@@ -338,7 +338,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">🤝</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Trauma & Grief</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Trauma & grief</h3>
                 <ul className="text-dark-grey space-y-2">
                   <li>• Grief & bereavement</li>
                   <li>• <strong>Online PTSD therapy for veterans</strong></li>
@@ -352,7 +352,7 @@ function App() {
                 <div className="w-12 h-12 bg-periwinkle rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
                   <span className="text-deep-blue text-2xl">🌱</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Substance Use & Eating Disorders</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Substance use & eating disorders</h3>
                 <ul className="text-dark-grey space-y-2">
                   <li>• Alcohol/nicotine use disorders</li>
                   <li>• Other substance use disorders</li>
@@ -363,7 +363,7 @@ function App() {
             </div>
 
             <div className="mt-12 bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-deep-blue mb-4">Advanced Treatment Expertise</h3>
+              <h3 className="text-2xl font-bold text-deep-blue mb-4">Advanced treatment expertise</h3>
               <p className="text-dark-grey text-lg mb-4">
                 Dr. Tabrah brings extensive experience in psychopharmacology and various treatment modalities including:
               </p>
@@ -403,7 +403,7 @@ function App() {
                 <div className="w-20 h-20 bg-periwinkle rounded-full flex items-center justify-center mx-auto mb-6" aria-hidden="true">
                   <span className="text-deep-blue text-3xl font-bold">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Initial Appointment</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Initial appointment</h3>
                 <p className="text-dark-grey">
                   Schedule your confidential virtual appointment through our secure booking system. We'll discuss your concerns and mental health goals in a safe, private environment.
                 </p>
@@ -414,7 +414,7 @@ function App() {
                 <div className="w-20 h-20 bg-periwinkle rounded-full flex items-center justify-center mx-auto mb-6" aria-hidden="true">
                   <span className="text-deep-blue text-3xl font-bold">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Treatment Planning</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Treatment planning</h3>
                 <p className="text-dark-grey">
                   Together, we'll develop a personalized treatment plan that may include medication management, brief psychotherapeutic interventions, and ongoing support strategies.
                 </p>
@@ -425,7 +425,7 @@ function App() {
                 <div className="w-20 h-20 bg-periwinkle rounded-full flex items-center justify-center mx-auto mb-6" aria-hidden="true">
                   <span className="text-deep-blue text-3xl font-bold">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-deep-blue mb-4">Ongoing Support</h3>
+                <h3 className="text-xl font-bold text-deep-blue mb-4">Ongoing support</h3>
                 <p className="text-dark-grey">
                   Regular follow-up appointments through our secure telehealth platform ensure continuous care and treatment adjustments as needed for your wellness journey.
                 </p>
@@ -433,10 +433,10 @@ function App() {
             </div>
 
             <div className="bg-gray-50 p-8 rounded-lg mb-8">
-              <h3 className="text-2xl font-bold text-deep-blue mb-4">What to Expect from Your First Telepsychiatry Appointment</h3>
+              <h3 className="text-2xl font-bold text-deep-blue mb-4">What to expect from your first telepsychiatry appointment</h3>
               <div className="grid md:grid-cols-2 gap-6 text-dark-grey">
                 <div>
-                  <h4 className="font-semibold mb-2">Technical Requirements:</h4>
+                  <h4 className="font-semibold mb-2">Technical requirements:</h4>
                   <ul className="space-y-1">
                     <li>• Stable internet connection</li>
                     <li>• Computer, tablet, or smartphone with camera</li>
@@ -445,7 +445,7 @@ function App() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">During Your Session:</h4>
+                  <h4 className="font-semibold mb-2">During your session:</h4>
                   <ul className="space-y-1">
                     <li>• Comprehensive mental health assessment</li>
                     <li>• Discussion of symptoms and concerns</li>
@@ -570,7 +570,7 @@ function App() {
             </div>
 
             <div className="text-center bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-xl font-bold text-deep-blue mb-4">Share Your Experience</h3>
+              <h3 className="text-xl font-bold text-deep-blue mb-4">Share your experience</h3>
               <p className="text-dark-grey mb-6">
                 Your feedback helps others find the mental health support they need. Consider leaving a review on:
               </p>
@@ -596,11 +596,11 @@ function App() {
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Contact Information */}
                 <div className="text-left">
-                  <h3 className="text-xl font-bold text-deep-blue mb-6">Contact Information</h3>
+                  <h3 className="text-xl font-bold text-deep-blue mb-6">Contact information</h3>
                   
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-dark-grey mb-2">Phone or Text</h4>
+                      <h4 className="font-semibold text-dark-grey mb-2">Phone or text</h4>
                       <a 
                         href="tel:707-582-2724" 
                         className="text-deep-blue hover:text-blue-800 transition-colors text-lg font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
@@ -652,7 +652,7 @@ function App() {
 
             {/* Service Areas */}
             <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
-              <h3 className="text-xl font-bold text-deep-blue mb-4">Licensed to Serve</h3>
+              <h3 className="text-xl font-bold text-deep-blue mb-4">Licensed to serve</h3>
               <p className="text-dark-grey mb-4">
                 Dr. Tabrah is licensed to provide <strong>telepsychiatry services</strong> across multiple states:
               </p>
@@ -700,25 +700,25 @@ function App() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold">Tabrah TelePsychiatry</h3>
-                  <p className="text-sm text-gray-300">REACH OUT FOR HELP</p>
+                  <p className="text-sm text-gray-300">Reach out for help</p>
                 </div>
               </button>
             </div>
 
             {/* Links */}
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold mb-4">Quick links</h4>
               <nav className="space-y-2" role="navigation" aria-label="Footer navigation">
                 <a href="#about" className="block text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded">About Dr. Tabrah</a>
                 <a href="#services" className="block text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded">Services</a>
-                <a href="#how-it-works" className="block text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded">How It Works</a>
+                <a href="#how-it-works" className="block text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded">How it works</a>
                 <a href="#faqs" className="block text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded">FAQs</a>
               </nav>
             </div>
 
             {/* Social Media Links Section - EASY TO UPDATE */}
             <div>
-              <h4 className="font-semibold mb-4">Connect With Us</h4>
+              <h4 className="font-semibold mb-4">Connect with us</h4>
               {/* 
                 ========================================
                 SOCIAL MEDIA LINKS - UPDATE THESE URLs
