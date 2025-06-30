@@ -100,14 +100,53 @@ function App() {
         </div>
       </header>
 
-      {/* Emergency Notice Banner */}
-      <div className="bg-red-600 text-white py-2" role="alert" aria-live="polite">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-medium">
-            <strong>Crisis Support:</strong> If you need immediate help, call or text 988 (Suicide & Crisis Lifeline) or dial 911
-          </p>
+      {/* Enhanced Crisis Support Banner with Active Links */}
+      <section id="crisis-support" className="bg-red-600 text-white py-3" role="alert" aria-live="polite">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-sm md:text-base font-medium">
+              <strong>🚨 Crisis Support:</strong> If you need immediate help, call or text{' '}
+              <a 
+                href="tel:988" 
+                className="underline hover:text-red-200 transition-colors font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
+                aria-label="Call 988 Suicide and Crisis Lifeline"
+              >
+                988 (Suicide & Crisis Lifeline)
+              </a>
+              {' '}or dial{' '}
+              <a 
+                href="tel:911" 
+                className="underline hover:text-red-200 transition-colors font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
+                aria-label="Call 911 for emergency services"
+              >
+                911
+              </a>
+            </p>
+            <p className="text-xs md:text-sm mt-1 text-red-100">
+              For additional resources, visit{' '}
+              <a 
+                href="https://988lifeline.org" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
+                aria-label="Visit 988 Lifeline website - opens in new window"
+              >
+                988lifeline.org
+              </a>
+              {' '}or{' '}
+              <a 
+                href="https://www.911.gov" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
+                aria-label="Visit 911.gov website - opens in new window"
+              >
+                911.gov
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
       <main id="main-content" role="main">
