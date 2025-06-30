@@ -197,7 +197,7 @@ function App() {
                     With over 30 years of distinguished experience in psychiatry, Dr. Tabrah brings unparalleled expertise to your mental health journey. As a <strong>Diplomate of the American Board of Psychiatry and Neurology</strong>, she has dedicated her career to providing compassionate, personalized care.
                   </p>
                   <p>
-                    Since 2021, Dr. Tabrah has been at the forefront of <strong>telepsychiatry</strong>, working with industry leaders like Teladoc and Iris Telehealth. She holds active medical licenses in <strong>Florida (ME-76909), Ohio (35-07-9156-T), Kansas (04-46121), and Missouri (2022014769)</strong>, with DEA registration (BT6480064) in Missouri.
+                    Since 2021, Dr. Tabrah has been at the forefront of <strong>telepsychiatry</strong>, working with industry leaders like Teladoc and Iris Telehealth. She maintains active medical licenses across multiple states, ensuring comprehensive access to quality mental health care.
                   </p>
                   <blockquote className="font-semibold text-deep-blue border-l-4 border-periwinkle pl-4">
                     "My core belief is that understanding your unique journey is paramount. I utilize thoughtful medication management and brief psychotherapeutic interventions to create a safe, affirming space where you can openly explore your concerns, and we can collaboratively work towards your mental wellness goals."
@@ -574,13 +574,60 @@ function App() {
               <p className="text-dark-grey mb-6">
                 Your feedback helps others find the mental health support they need. Consider leaving a review on:
               </p>
-              <div className="flex justify-center space-x-6 text-deep-blue">
-                <span>Google Business Profile</span>
-                <span>•</span>
-                <span>Psychology Today</span>
-                <span>•</span>
-                <span>HealthGrades</span>
+              {/* 
+                ========================================
+                REVIEW PLATFORM LINKS - UPDATE THESE URLs
+                ========================================
+                
+                To update review platform links, simply replace the href="#" 
+                with your actual review page URLs:
+                
+                Google Business Profile: Replace href="#" with href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review"
+                Psychology Today: Replace href="#" with href="https://www.psychologytoday.com/profile/YOUR_PROFILE_ID"
+                HealthGrades: Replace href="#" with href="https://www.healthgrades.com/physician/dr-YOUR_NAME"
+                
+                You can also add more review platforms by copying 
+                the <a> tag structure below and changing the platform name.
+              */}
+              <div className="flex justify-center flex-wrap gap-6 text-deep-blue">
+                {/* Google Business Profile Link - Replace href="#" with your Google Business review URL */}
+                <a 
+                  href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
+                  aria-label="Leave a review on Google Business Profile - opens in new window"
+                >
+                  Google Business Profile
+                </a>
+                
+                <span className="text-gray-400">•</span>
+                
+                {/* Psychology Today Link - Replace href="#" with your Psychology Today profile URL */}
+                <a 
+                  href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
+                  aria-label="Leave a review on Psychology Today - opens in new window"
+                >
+                  Psychology Today
+                </a>
+                
+                <span className="text-gray-400">•</span>
+                
+                {/* HealthGrades Link - Replace href="#" with your HealthGrades profile URL */}
+                <a 
+                  href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
+                  aria-label="Leave a review on HealthGrades - opens in new window"
+                >
+                  HealthGrades
+                </a>
               </div>
+              {/* End of Review Platform Links Section */}
             </div>
           </div>
         </section>
@@ -650,17 +697,39 @@ function App() {
               </div>
             </div>
 
-            {/* Service Areas */}
+            {/* Service Areas with License Information */}
             <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
               <h3 className="text-xl font-bold text-deep-blue mb-4">Licensed to serve</h3>
-              <p className="text-dark-grey mb-4">
+              <p className="text-dark-grey mb-6">
                 Dr. Tabrah is licensed to provide <strong>telepsychiatry services</strong> across multiple states:
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-deep-blue font-semibold">
-                <div><strong>Ohio (OH)</strong></div>
-                <div><strong>Missouri (MO)</strong></div>
-                <div><strong>Kansas (KS)</strong></div>
-                <div><strong>Florida (FL)</strong></div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div className="space-y-3">
+                  <div>
+                    <div className="font-semibold text-deep-blue">Ohio (OH)</div>
+                    <div className="text-sm text-dark-grey">License #35-07-9156-T</div>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-deep-blue">Missouri (MO)</div>
+                    <div className="text-sm text-dark-grey">License #2022014769</div>
+                    <div className="text-sm text-dark-grey">DEA #BT6480064</div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div>
+                    <div className="font-semibold text-deep-blue">Kansas (KS)</div>
+                    <div className="text-sm text-dark-grey">License #04-46121</div>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-deep-blue">Florida (FL)</div>
+                    <div className="text-sm text-dark-grey">License #ME-76909</div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <p className="text-sm text-dark-grey">
+                  <strong>Board Certification:</strong> Diplomate of the American Board of Psychiatry and Neurology
+                </p>
               </div>
             </div>
 
