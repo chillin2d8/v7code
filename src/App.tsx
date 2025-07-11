@@ -735,7 +735,7 @@ function App() {
 
             {/* CTA Button */}
             <a 
-              href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3OcEIOqt1Dqc4XduNreshvgjy-tCdrsxL9SBc=?gv=true" 
+              href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-deep-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
