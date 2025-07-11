@@ -29,7 +29,7 @@ function App() {
             >
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
-                  src="/src/TTPLogo-png.png" 
+                  src="/TTPLogo-png.png" 
                   alt="Tabrah TelePsychiatry Logo" 
                   className="w-12 h-12 object-contain"
                   width="48"
@@ -180,7 +180,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="/src/vivhlthwebopt.jpg" 
+                  src="/vivhlthwebopt.jpg" 
                   alt="Dr. Tabrah - Board-Certified Psychiatrist with over 30 years of experience" 
                   className="rounded-lg shadow-lg w-full"
                   width="500"
@@ -760,7 +760,7 @@ function App() {
               >
                 <div className="w-10 h-10 flex items-center justify-center bg-white rounded-lg">
                   <img 
-                    src="/src/TTPLogo-png.png" 
+                    src="/TTPLogo-png.png" 
                     alt="Tabrah TelePsychiatry Logo" 
                     className="w-8 h-8 object-contain"
                     width="32"
