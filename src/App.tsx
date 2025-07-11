@@ -180,7 +180,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://i.ibb.co/B5B0QRJq/dr-HT-Cropped-1280x1280.jpg" 
+                  src="https://drive.google.com/file/d/1MM-Vskw2M3TwI6Ix-djTFdaAcqfDZmGk/view?usp=drive_link" 
                   alt="Dr. Tabrah - Board-Certified Psychiatrist with over 30 years of experience" 
                   className="rounded-lg shadow-lg w-full"
                   width="500"
