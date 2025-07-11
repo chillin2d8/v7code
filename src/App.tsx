@@ -29,7 +29,7 @@ function App() {
             >
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
-                  src="https://i.ibb.co/1Y2QtGqd/TTPLogo-png.png" 
+                  src="/src/TTPLogo-png.png" 
                   alt="Tabrah TelePsychiatry Logo" 
                   className="w-12 h-12 object-contain"
                   width="48"
@@ -760,7 +760,7 @@ function App() {
               >
                 <div className="w-10 h-10 flex items-center justify-center bg-white rounded-lg">
                   <img 
-                    src="https://i.ibb.co/1Y2QtGqd/TTPLogo-png.png" 
+                    src="/src/TTPLogo-png.png" 
                     alt="Tabrah TelePsychiatry Logo" 
                     className="w-8 h-8 object-contain"
                     width="32"
