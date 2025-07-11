@@ -50,7 +50,7 @@ function App() {
               <a href="#faqs" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">FAQs</a>
               <a href="#contact" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Contact</a>
               <a 
-                href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3OcEIOqt1Dqc4XduNreshvgjy-tCdrsxL9SBc=?gv=true" 
+                href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-deep-blue text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
@@ -86,7 +86,7 @@ function App() {
                 <a href="#faqs" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">FAQs</a>
                 <a href="#contact" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Contact</a>
                 <a 
-                  href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3OcEIOqt1Dqc4XduNreshvgjy-tCdrsxL9SBc=?gv=true" 
+                  href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-deep-blue text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium text-center focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
@@ -163,7 +163,7 @@ function App() {
               Access convenient online therapy and telemedicine for depression, anxiety, and women's mental health across Ohio (OH), Missouri (MO), Kansas (KS), and Florida (FL). Benefit from personalized medication management with expert support.
             </p>
             <a 
-              href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3OcEIOqt1Dqc4XduNreshvgjy-tCdrsxL9SBc=?gv=true" 
+              href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186e" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-deep-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
@@ -208,7 +208,7 @@ function App() {
                 </div>
                 <div className="mt-8">
                   <a 
-                    href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3OcEIOqt1Dqc4XduNreshvgjy-tCdrsxL9SBc=?gv=true" 
+                    href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block bg-deep-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
@@ -458,7 +458,7 @@ function App() {
 
             <div className="text-center">
               <a 
-                href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ3OcEIOqt1Dqc4XduNreshvgjy-tCdrsxL9SBc=?gv=true" 
+                href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-deep-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
