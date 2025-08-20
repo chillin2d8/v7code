@@ -712,7 +712,6 @@ function App() {
                   <div>
                     <div className="font-semibold text-deep-blue">Missouri (MO)</div>
                     <div className="text-sm text-dark-grey">License #2022014769</div>
-                    <div className="text-sm text-dark-grey">DEA #BT6480064</div>
                   </div>
                 </div>
                 <div className="space-y-3">
