@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import ReviewWidget from './components/ReviewWidget';
+import BookingWidget from './components/BookingWidget';
+import LiveChat from './components/LiveChat';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -569,65 +572,10 @@ function App() {
               </article>
             </div>
 
-            <div className="text-center bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-xl font-bold text-deep-blue mb-4">Share your experience</h3>
-              <p className="text-dark-grey mb-6">
-                Your feedback helps others find the mental health support they need. Consider leaving a review on:
-              </p>
-              {/* 
-                ========================================
-                REVIEW PLATFORM LINKS - UPDATE THESE URLs
-                ========================================
-                
-                To update review platform links, simply replace the href="#" 
-                with your actual review page URLs:
-                
-                Google Business Profile: Replace href="#" with href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review"
-                Psychology Today: Replace href="#" with href="https://www.psychologytoday.com/profile/YOUR_PROFILE_ID"
-                HealthGrades: Replace href="#" with href="https://www.healthgrades.com/physician/dr-YOUR_NAME"
-                
-                You can also add more review platforms by copying 
-                the <a> tag structure below and changing the platform name.
-              */}
-              <div className="flex justify-center flex-wrap gap-6 text-deep-blue">
-                {/* Google Business Profile Link - Replace href="#" with your Google Business review URL */}
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
-                  aria-label="Leave a review on Google Business Profile - opens in new window"
-                >
-                  Google Business Profile
-                </a>
-                
-                <span className="text-gray-400">•</span>
-                
-                {/* Psychology Today Link - Replace href="#" with your Psychology Today profile URL */}
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
-                  aria-label="Leave a review on Psychology Today - opens in new window"
-                >
-                  Psychology Today
-                </a>
-                
-                <span className="text-gray-400">•</span>
-                
-                {/* HealthGrades Link - Replace href="#" with your HealthGrades profile URL */}
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
-                  aria-label="Leave a review on HealthGrades - opens in new window"
-                >
-                  HealthGrades
-                </a>
-              </div>
-              {/* End of Review Platform Links Section */}
+            {/* Enhanced Review Widget */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <ReviewWidget />
+              <BookingWidget />
             </div>
           </div>
         </section>
@@ -745,6 +693,9 @@ function App() {
           </div>
         </section>
       </main>
+
+      {/* Live Chat Widget */}
+      <LiveChat />
 
       {/* Footer */}
       <footer className="bg-deep-blue text-white py-12" role="contentinfo">
