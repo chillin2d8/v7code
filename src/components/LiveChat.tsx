@@ -7,13 +7,39 @@ interface LiveChatProps {
 const LiveChat: React.FC<LiveChatProps> = ({ className = '' }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real implementation, this would send the message to your chat system
-    alert('Thank you for your message! We will respond within 24 hours. For immediate assistance, please call 707-582-2724.');
-    setMessage('');
-    setIsOpen(false);
+    setIsLoading(true);
+    
+    try {
+      // Replace with your actual webhook URL
+      const webhookUrl = 'https://chat.googleapis.com/v1/spaces/AAQAVl2T6dI/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=chtfkstYOTEdMpfcJMFwhnZHCTuu3mSc_eAtkeTE1dI';
+      
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json; charset=UTF-8',
+        },
+        body: JSON.stringify({
+          text: message,
+        }),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully! We will respond within 24 hours.');
+        setMessage('');
+        setIsOpen(false);
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      alert('Error sending message. Please try again later.');
+      console.error('Error:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -56,19 +82,22 @@ const LiveChat: React.FC<LiveChatProps> = ({ className = '' }) => {
                 className="w-full p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-deep-blue focus:border-transparent"
                 rows={3}
                 required
+                disabled={isLoading}
               />
               
               <div className="flex space-x-2">
                 <button
                   type="submit"
-                  className="flex-1 bg-deep-blue text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
+                  disabled={isLoading}
+                  className="flex-1 bg-deep-blue text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 disabled:opacity-50"
                 >
-                  Send Message
+                  {isLoading ? 'Sending...' : 'Send Message'}
                 </button>
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 text-dark-grey hover:text-deep-blue transition-colors focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
+                  disabled={isLoading}
+                  className="px-4 py-2 text-dark-grey hover:text-deep-blue transition-colors focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded disabled:opacity-50"
                 >
                   Close
                 </button>
