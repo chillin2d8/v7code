@@ -13,7 +13,7 @@ const ReviewWidget: React.FC<ReviewWidgetProps> = ({ className = '' }) => {
       </p>
       <div className="space-y-3">
         <a 
-          href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review" 
+          href="https://g.page/r/CRsj9FHiW7kuEAI/review" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center justify-between p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2"
