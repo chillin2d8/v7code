@@ -76,10 +76,18 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
         )}
       </div>
       
-      <div className="mt-4 p-3 bg-blue-800 bg-opacity-50 rounded-lg">
-        <p className="text-xs text-blue-100">
-          <strong>Available:</strong> Mon-Thu 8AM-8PM, Fri-Sun 10AM-1PM
-        </p>
+      <div className="mt-4 p-3 bg-blue-800 bg-opacity-50 rounded-lg flex flex-wrap">
+        <div className="w-1/2">
+          <p className="text-xs text-blue-100">
+            <strong>Available:</strong>
+          </p>
+        </div>
+        <div className="w-1/2">
+          <p className="text-xs text-blue-100">Monday - Thursday: 8 AM - 8 PM</p>
+          <p className="text-xs text-blue-100">Friday: 10 AM - 1 PM</p>
+          <p className="text-xs text-blue-100">Saturday: 10 AM - 1 PM</p>
+          <p className="text-xs text-blue-100">Sunday: 10 AM - 1 PM</p>
+        </div>
       </div>
     </div>
   );
