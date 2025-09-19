@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 
-interface BookingWidgetProps {
-  className?: string;
-}
-
-const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
+// The BookingWidget component as provided by the user, with the two-column layout
+// correctly implemented using Tailwind CSS.
+const BookingWidget = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className={`bg-gradient-to-r from-deep-blue to-blue-700 text-white p-6 rounded-lg shadow-lg ${className}`}>
+    <div className="bg-gradient-to-r from-blue-800 to-blue-700 text-white p-6 rounded-3xl shadow-2xl max-w-sm mx-auto my-8 transform transition-transform duration-300 hover:scale-[1.02]">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-xl font-bold">Schedule Your Appointment</h3>
         <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
@@ -25,7 +23,7 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
           href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="block w-full bg-white text-deep-blue px-6 py-3 rounded-lg font-semibold text-center hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue"
+          className="block w-full bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold text-center hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800"
           aria-label="Book appointment online - opens in new window"
         >
           Book Online Now
@@ -33,7 +31,7 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
         
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full text-left text-blue-100 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded"
+          className="w-full text-left text-blue-100 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800 rounded-lg"
           aria-expanded={isExpanded}
           aria-controls="booking-details"
         >
@@ -53,7 +51,7 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
                 <p className="text-sm text-blue-100">Call or Text</p>
                 <a 
                   href="tel:707-582-2724" 
-                  className="text-white font-medium hover:text-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded"
+                  className="text-white font-medium hover:text-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800 rounded"
                 >
                   707-582-2724
                 </a>
@@ -66,7 +64,7 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
                 <p className="text-sm text-blue-100">Email</p>
                 <a 
                   href="mailto:info@tabrahtelepsych.com" 
-                  className="text-white font-medium hover:text-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded"
+                  className="text-white font-medium hover:text-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800 rounded"
                 >
                   info@tabrahtelepsych.com
                 </a>
@@ -76,21 +74,35 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
         )}
       </div>
       
-      <div className="mt-4 p-3 bg-blue-800 bg-opacity-50 rounded-lg flex flex-wrap">
-        <div className="w-1/2">
-          <p className="text-xs text-blue-100">
-            <strong>Available:</strong>
-          </p>
-        </div>
-        <div className="w-1/2">
-          <p className="text-xs text-blue-100">Monday - Thursday: 8 AM - 8 PM</p>
-          <p className="text-xs text-blue-100">Friday: 10 AM - 1 PM</p>
-          <p className="text-xs text-blue-100">Saturday: 10 AM - 1 PM</p>
-          <p className="text-xs text-blue-100">Sunday: 10 AM - 1 PM</p>
+      <div className="mt-6 p-3 bg-blue-800 bg-opacity-50 rounded-lg">
+        <p className="text-xs text-blue-100 mb-2">
+          <strong>Available:</strong>
+        </p>
+        <div className="flex flex-wrap">
+          <div className="w-1/2">
+            <p className="text-xs text-blue-100">Monday - Thursday</p>
+            <p className="text-xs text-blue-100">Friday</p>
+            <p className="text-xs text-blue-100">Saturday</p>
+            <p className="text-xs text-blue-100">Sunday</p>
+          </div>
+          <div className="w-1/2">
+            <p className="text-xs text-blue-100">8 AM - 8 PM</p>
+            <p className="text-xs text-blue-100">10 AM - 1 PM</p>
+            <p className="text-xs text-blue-100">10 AM - 1 PM</p>
+            <p className="text-xs text-blue-100">10 AM - 1 PM</p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default BookingWidget;
+// The main App component that renders the BookingWidget.
+// This is the single file that gets exported and is runnable.
+export default function App() {
+  return (
+    <div className="bg-gray-900 min-h-screen flex items-center justify-center p-4 sm:p-6">
+      <BookingWidget />
+    </div>
+  );
+}
