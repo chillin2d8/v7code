@@ -84,6 +84,14 @@ const LiveChat: React.FC<LiveChatProps> = ({ className = '' }) => {
                 required
                 disabled={isLoading}
               />
+                onClick={() => {
+                  // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL CHAT CONVERSION
+                  if (typeof window !== 'undefined' && window.trackChatConversion) {
+                    window.trackChatConversion();
+                  }
+                  // FACEBOOK PIXEL TRACKING (if needed)
+                  // fbq('track', 'Contact', { content_name: 'Live Chat - Send Message' });
+                }}
               
               <div className="flex space-x-2">
                 <button

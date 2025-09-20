@@ -149,6 +149,51 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
     <!-- End Google Tag Manager -->
+    
+    <!-- Google Ads Conversion Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // REPLACE 'AW-XXXXXXXXXX' WITH YOUR ACTUAL GOOGLE ADS CONVERSION ID
+      gtag('config', 'AW-XXXXXXXXXX');
+      
+      // Google Ads Conversion Functions - REPLACE CONVERSION LABELS WITH YOUR ACTUAL LABELS
+      function trackBookingConversion() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/BOOKING_CONVERSION_LABEL', // Replace with your booking conversion label
+          'value': 1.0,
+          'currency': 'USD'
+        });
+      }
+      
+      function trackPhoneConversion() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/PHONE_CONVERSION_LABEL', // Replace with your phone conversion label
+          'value': 1.0,
+          'currency': 'USD'
+        });
+      }
+      
+      function trackEmailConversion() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/EMAIL_CONVERSION_LABEL', // Replace with your email conversion label
+          'value': 1.0,
+          'currency': 'USD'
+        });
+      }
+      
+      function trackChatConversion() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/CHAT_CONVERSION_LABEL', // Replace with your chat conversion label
+          'value': 1.0,
+          'currency': 'USD'
+        });
+      }
+    </script>
+    <!-- End Google Ads Conversion Tracking -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->

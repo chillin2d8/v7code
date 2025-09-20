@@ -27,6 +27,14 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
           rel="noopener noreferrer"
           className="block w-full bg-white text-deep-blue px-6 py-3 rounded-lg font-semibold text-center hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue"
           aria-label="Book appointment online - opens in new window"
+          onClick={() => {
+            // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL BOOKING CONVERSION
+            if (typeof window !== 'undefined' && window.trackBookingConversion) {
+              window.trackBookingConversion();
+            }
+            // FACEBOOK PIXEL TRACKING (if needed)
+            // fbq('track', 'Lead', { content_name: 'Booking Widget - Book Online Now' });
+          }}
         >
           Book Online Now
         </a>
@@ -54,6 +62,14 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
                 <a 
                   href="tel:707-582-2724" 
                   className="text-white font-medium hover:text-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded"
+                  onClick={() => {
+                    // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL PHONE CONVERSION
+                    if (typeof window !== 'undefined' && window.trackPhoneConversion) {
+                      window.trackPhoneConversion();
+                    }
+                    // FACEBOOK PIXEL TRACKING (if needed)
+                    // fbq('track', 'Contact', { content_name: 'Booking Widget - Phone Call' });
+                  }}
                 >
                   707-582-2724
                 </a>
@@ -67,6 +83,14 @@ const BookingWidget: React.FC<BookingWidgetProps> = ({ className = '' }) => {
                 <a 
                   href="mailto:info@tabrahtelepsych.com" 
                   className="text-white font-medium hover:text-blue-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-deep-blue rounded"
+                  onClick={() => {
+                    // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL EMAIL CONVERSION
+                    if (typeof window !== 'undefined' && window.trackEmailConversion) {
+                      window.trackEmailConversion();
+                    }
+                    // FACEBOOK PIXEL TRACKING (if needed)
+                    // fbq('track', 'Contact', { content_name: 'Booking Widget - Email' });
+                  }}
                 >
                   info@tabrahtelepsych.com
                 </a>

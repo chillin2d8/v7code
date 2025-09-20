@@ -58,6 +58,14 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-deep-blue text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
                 aria-label="Book appointment - opens in new window"
+                onClick={() => {
+                  // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL BOOKING CONVERSION
+                  if (typeof window !== 'undefined' && window.trackBookingConversion) {
+                    window.trackBookingConversion();
+                  }
+                  // FACEBOOK PIXEL TRACKING (if needed)
+                  // fbq('track', 'Lead', { content_name: 'Header Book Appointment' });
+                }}
               >
                 Book Appointment
               </a>
@@ -68,164 +76,7 @@ function App() {
               className="md:hidden p-2 focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
-              aria-controls="mobile-menu"
-              aria-label="Toggle mobile menu"
-            >
-              <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-                <span className="block w-full h-0.5 bg-dark-grey"></span>
-                <span className="block w-full h-0.5 bg-dark-grey"></span>
-                <span className="block w-full h-0.5 bg-dark-grey"></span>
-              </div>
-            </button>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden py-4 border-t" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
-              <div className="flex flex-col space-y-4">
-                <a href="#about" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">About Dr. Tabrah</a>
-                <a href="#services" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Services</a>
-                <a href="#how-it-works" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">How it works</a>
-                <a href="#faqs" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">FAQs</a>
-                <a href="#contact" className="text-dark-grey hover:text-deep-blue transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded">Contact</a>
-                <a 
-                  href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-deep-blue text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium text-center focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
-                  aria-label="Book appointment - opens in new window"
-                >
-                  Book Appointment
-                </a>
-              </div>
-            </div>
-          )}
-        </div>
-      </header>
-
-      {/* Enhanced Crisis Support Banner with Active Links */}
-      <section id="crisis-support" className="bg-red-600 text-white py-3" role="alert" aria-live="polite">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-sm md:text-base font-medium">
-              <strong>🚨 Crisis Support:</strong> If you need immediate help, call or text{' '}
-              <a 
-                href="tel:988" 
-                className="underline hover:text-red-200 transition-colors font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
-                aria-label="Call 988 Suicide and Crisis Lifeline"
-              >
-                988 (Suicide & Crisis Lifeline)
-              </a>
-              {' '}or dial{' '}
-              <a 
-                href="tel:911" 
-                className="underline hover:text-red-200 transition-colors font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
-                aria-label="Call 911 for emergency services"
-              >
-                911
-              </a>
-            </p>
-            <p className="text-xs md:text-sm mt-1 text-red-100">
-              For additional resources, visit{' '}
-              <a 
-                href="https://988lifeline.org" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="underline hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
-                aria-label="Visit 988 Lifeline website - opens in new window"
-              >
-                988lifeline.org
-              </a>
-              {' '}or{' '}
-              <a 
-                href="https://www.911.gov" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="underline hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-600 rounded"
-                aria-label="Visit 911.gov website - opens in new window"
-              >
-                911.gov
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Content */}
-      <main id="main-content" role="main">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-lavender to-periwinkle py-20" aria-labelledby="hero-heading">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 id="hero-heading" className="text-4xl md:text-6xl font-bold text-deep-blue mb-6 leading-tight">
-              Experience Compassionate Telepsychiatry with Dr. Tabrah
-            </h1>
-            <p className="text-xl md:text-2xl text-dark-grey mb-8 max-w-4xl mx-auto">
-              Over 30 Years of Board-Certified Psychiatric Expertise, Right to Your Home
-            </p>
-            <p className="text-lg text-dark-grey mb-10 max-w-3xl mx-auto">
-              Access convenient online therapy and telemedicine for depression, anxiety, and women's mental health across Ohio (OH), Missouri (MO), Kansas (KS), and Florida (FL). Benefit from personalized medication management with expert support.
-            </p>
-            <a 
-              href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186e" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-deep-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
-              aria-label="Schedule your virtual appointment - opens in new window"
-            >
-              Schedule Your Virtual Appointment
-            </a>
-          </div>
-        </section>
-
-        {/* About Dr. Tabrah Section */}
-        <section id="about" className="py-20 bg-white" aria-labelledby="about-heading">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img 
-                  src="/vivhlthwebopt.jpg" 
-                  alt="Dr. Tabrah - Board-Certified Psychiatrist with over 30 years of experience" 
-                  className="rounded-lg shadow-lg w-full"
-                  width="500"
-                  height="600"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-deep-blue mb-6">
-                  Your Journey to Wellness Begins Here: Meet Board-Certified Psychiatrist Dr. Tabrah
-                </h2>
-                <div className="space-y-4 text-dark-grey text-lg">
-                  <p>
-                    With over 30 years of distinguished experience in psychiatry, Dr. Tabrah brings unparalleled expertise to your mental health journey. As a <strong>Diplomate of the American Board of Psychiatry and Neurology</strong>, she has dedicated her career to providing compassionate, personalized care.
-                  </p>
-                  <p>
-                    Since 2021, Dr. Tabrah has been at the forefront of <strong>telepsychiatry</strong>, working with industry leaders like Teladoc and Iris Telehealth. She maintains active medical licenses across multiple states, ensuring comprehensive access to quality mental health care.
-                  </p>
-                  <blockquote className="font-semibold text-deep-blue border-l-4 border-periwinkle pl-4">
-                    "My core belief is that understanding your unique journey is paramount. I utilize thoughtful medication management and brief psychotherapeutic interventions to create a safe, affirming space where you can openly explore your concerns, and we can collaboratively work towards your mental wellness goals."
-                  </blockquote>
-                  <p>
-                    As a <strong>women-owned solo practice</strong>, Dr. Tabrah provides personalized, consistent care with a deep understanding of diverse mental health needs, particularly women's mental health concerns.
-                  </p>
-                </div>
-                <div className="mt-8">
-                  <a 
-                    href="https://care.headway.co/providers/haleh-tabrah?utm_source=pem&utm_medium=direct_link&utm_campaign=135186" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block bg-deep-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
-                    aria-label="Schedule appointment with Dr. Tabrah - opens in new window"
-                  >
-                    Schedule Appointment
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Practice Disclaimers Section */}
+              aria
         <section className="py-12 bg-gray-100" aria-labelledby="disclaimers-heading">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="disclaimers-heading" className="sr-only">Practice information and disclaimers</h2>
@@ -600,6 +451,14 @@ function App() {
                         href="tel:707-582-2724" 
                         className="text-deep-blue hover:text-blue-800 transition-colors text-lg font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
                         aria-label="Call or text 707-582-2724"
+                        onClick={() => {
+                          // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL PHONE CONVERSION
+                          if (typeof window !== 'undefined' && window.trackPhoneConversion) {
+                            window.trackPhoneConversion();
+                          }
+                          // FACEBOOK PIXEL TRACKING (if needed)
+                          // fbq('track', 'Contact', { content_name: 'Contact Section - Phone Call' });
+                        }}
                       >
                         707-582-2724
                       </a>
@@ -612,6 +471,14 @@ function App() {
                         href="mailto:info@tabrahtelepsych.com" 
                         className="text-deep-blue hover:text-blue-800 transition-colors text-lg font-medium focus:outline-none focus:ring-2 focus:ring-deep-blue focus:ring-offset-2 rounded"
                         aria-label="Email info@tabrahtelepsych.com"
+                        onClick={() => {
+                          // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL EMAIL CONVERSION
+                          if (typeof window !== 'undefined' && window.trackEmailConversion) {
+                            window.trackEmailConversion();
+                          }
+                          // FACEBOOK PIXEL TRACKING (if needed)
+                          // fbq('track', 'Contact', { content_name: 'Contact Section - Email' });
+                        }}
                       >
                         info@tabrahtelepsych.com
                       </a>
@@ -687,6 +554,22 @@ function App() {
               rel="noopener noreferrer"
               className="inline-block bg-deep-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
               aria-label="Schedule your confidential appointment - opens in new window"
+              onClick={() => {
+                // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL BOOKING CONVERSION
+                if (typeof window !== 'undefined' && window.trackBookingConversion) {
+                  window.trackBookingConversion();
+                }
+                // FACEBOOK PIXEL TRACKING (if needed)
+                // fbq('track', 'Lead', { content_name: 'Contact Section - Schedule Confidential Appointment' });
+              }}
+              onClick={() => {
+                // GOOGLE ADS TRACKING - REPLACE WITH YOUR ACTUAL BOOKING CONVERSION
+                if (typeof window !== 'undefined' && window.trackBookingConversion) {
+                  window.trackBookingConversion();
+                }
+                // FACEBOOK PIXEL TRACKING (if needed)
+                // fbq('track', 'Lead', { content_name: 'How It Works - Start Your Journey' });
+              }}
             >
               Schedule Your Confidential Appointment
             </a>
